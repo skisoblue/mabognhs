@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet"type="text/css" href="css/lightbox.min.css"/>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <title>Mabog National High School</title>
+    <link rel="icon" href="maboglogo.png" type="image/x-icon">
+
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f9fa;
+    
+}
+.header{
+    padding-top: 12px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,
+    rgba(34, 52, 168, 1) 1%,
+    rgba(34, 52, 168, .8) 18%,
+    rgba(34, 52, 168, .10) 90%),
+    url(front.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    z-index: 3;
+}
+.navbar-brand{
+    margin-top: -4px;
+    margin-left: 100px;
+}
+h1{
+    font-size: 18px;
+    margin-left: 65px;
+    position: absolute;
+    top: 30px;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px;
+    position: relative;
+    margin-top: 15px;
+    padding-right: 38px;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.nav-links ul li a:hover{
+    color:#2234A8;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2234A8;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    height: 2px;
+}
+.text-box{
+    width:90%
+}
+.text-box h2{
+    color: white;
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: 280px; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+.text-box h3{
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: -6px;
+    color: #fafa33;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box h4{
+    color: white;
+    font-size: 45px;
+    margin-left: 368px;
+    margin-top: -62px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box h5{
+    color: white;
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: -9px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.par1{
+    margin-left: 121px;
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: white;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .text-box h2 {
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 600px;
+        top: 0;
+        right: -608px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .header{
+        min-height: 230vh;
+        width: 400%;
+        background-image: linear-gradient(to right,
+        rgba(34, 52, 168, 1) 1%,
+        rgba(34, 52, 168, .8) 18%,
+        rgba(34, 52, 168, .10) 90%),
+        url(front.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .header .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .header .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .text-box h2 {
+        margin-top: 800px;
+        margin-bottom: -9px;
+        margin-left: 35px;
+        font-size: 60px;
+    }
+    .text-box h3{
+        margin-top: 16px;
+        margin-left: 35px;
+        font-size: 60px;
+    }
+    .text-box h4{
+        margin-left: 368px;
+        font-size: 60px;
+        margin-top: -80px;
+    }
+    .text-box h5{
+        margin-left: 35px;
+        font-size: 60px;
+        margin-top: -2px;
+    }
+    .text-box .par1{
+        
+        margin-left: 35px;
+        margin-top: 10px;
+        font-size: 35px;
+        font-weight: 450;
+        font-family: 'Poppins', sans-serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+       
+    }
+}
+.news{
+    margin-top: 120px;
+    margin-left: 120px;
+}
+h6{
+    font-size: 33px;
+    margin-left: 574px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+.category{
+    background-size: cover;
+    min-height: 90vh;
+    width: 110%;
+    margin-left: -124px;
+    margin-top: -210px;
+    background: #f2f3f4;   
+    text-align: left;
+    padding-bottom: 120px;
+}
+.una{
+    padding-top: 90px;
+    padding-left: 90px;
+}
+.vone {
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.par2{
+    margin-top: -288px;
+    font-size: 15px;
+    margin-left: 610px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+.footer{
+    background-size: cover;
+    min-height: 10vh;
+    width: 1487px;
+    margin-left: -138px;
+    margin-top: -10vh;
+    background: #1d1d1b; 
+}
+.end{
+    text-align: center;
+    margin-left: 140px;
+    padding-top: 26px;
+    font-size: 14px;
+}
+h12{
+   
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 700px) {
+    .news{
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    h6{
+        font-size: 55px;
+        margin-left: 7px;
+        margin-top: 210px;
+        white-space: nowrap;
+        
+    }
+    .category{
+        background-size: cover;
+        min-height: 268vh;
+        width: 445%;
+        margin-left: 4px;
+        margin-top: 45px;
+        background: white;   
+        margin-bottom: 100px;
+    }
+    .una{
+        padding-top: 48px;
+        padding-left: 14px;
+    }
+    
+    .par2{
+        overflow-y: scroll;
+        margin-top: -1720px;
+        font-size: 32px;
+        margin-left: 2px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.7;
+        
+    }
+    .vone {
+        margin-top: 800px;
+        margin-left: -45px;
+        width: 1350px;
+        height: 920px;
+    }
+    .footer{
+        background-size: cover;
+        min-height: 20vh;
+        width: 1578px;
+        margin-left: -138px;
+        margin-top: 268vh;
+        background: #1d1d1b; 
+    }
+    .end{
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+}
+.head {
+    margin-top: -675px;
+    margin-left: 120px;
+}
+h7 {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+.artone {
+    min-height: 29vh;
+    width: 58%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.newone {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+h8 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+    white-space: pre-line;
+}
+.image2 {
+    height: 32vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -66px;
+}
+.bodyone {
+    white-space: pre-line;
+    margin-top: -110px;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+h9 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+}
+.artwo {
+    min-height: 32vh;
+    width: 58%;
+    margin-top: -18px;
+    margin-bottom: 86px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.newtwo {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+.image3 {
+    height: 32vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -42px;
+}
+.bodytwo {
+    white-space: pre-line;
+    margin-top: -132px;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+.arthree {
+    min-height: 32vh;
+    width: 58%;
+    margin-top: -68px;
+    margin-bottom: 280px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+    
+}
+.newthree {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+h10 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+    white-space: pre-line;
+}
+.image4 {
+    height: 35vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -66px;
+}
+.bodythree {
+    white-space: pre-line;
+    margin-top: -126px;
+    font-size: 14px;
+    margin-bottom: 21px;
+}
+.announce {
+    margin-left: 880px;
+    margin-top: 102px;
+}
+h11 {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.inform {
+    min-height: 85vh;
+    width: 75%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: -5px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.event {
+    color: #2234A8;
+    font-size: 14px;
+    margin-left: 35px;
+    margin-top: 8px;
+    white-space: pre-line;
+    line-height: 115%;
+}
+@media only screen and (max-width: 700px) {
+    .head {
+        margin-top: -2920px;
+        margin-left: 45px;
+    }
+    h7 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .artone {
+        min-height: 60vh;
+        width: 425%;
+        margin-top: 35px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 36px;
+    }
+    .newone {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h8 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image2 {
+        height: 65vh;
+        width: 42%;
+        margin-left: 769px;
+        margin-top: -140px;
+    }
+    .bodyone {
+        white-space: pre-line;
+        margin-top: -205px;
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+    .artwo {
+        min-height: 60vh;
+        width: 425%;
+        margin-top: -112px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 50px;
+    }
+    .newtwo {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h9 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image3 {
+        height: 65vh;
+        width: 42%;
+        margin-left: 769px;
+        margin-top: -96px;
+    }
+    .bodytwo {
+        white-space: pre-line;
+        margin-top: -255px;
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+    .arthree {
+        min-height: 60vh;
+        width: 425%;
+        margin-top: -112px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 50px;
+    }
+    .newthree {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h10 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image4 {
+        height: 72vh;
+        width: 42%;
+        margin-left: 769px;
+        margin-top: -140px;
+    }
+    .bodythree {
+        white-space: pre-line;
+        margin-top: -255px;
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+    .announce {
+        margin-left: 50px;
+        margin-top: 2020px;
+    }
+    h11 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .inform {
+        min-height: 145vh;
+        width: 435%;
+        margin-top: 35px;
+        margin-bottom: 120px;
+        margin-left: -8px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        
+    }
+    .event {
+        color: #2234A8;
+        font-size: 33px;
+        margin-left: 100px;
+        margin-top: 20px;
+        line-height: 200%;
+        white-space: normal;
+    }
+}
+body {
+    background-color: #f2f3f4;
+}
+.vision {
+    font-size: 20px;
+    margin-top: 270px;
+    margin-left: 275px;
+}
+h19 {
+    font-weight: 500;
+}
+.pngone {
+    margin-top: 55px;
+    margin-left: 145px;
+}
+.first {
+    min-height: 78vh;
+    width: 33%;
+    margin-top: -180px;
+    margin-bottom: 120px;
+    margin-left: -150px;
+    background-color: #f8f9fa;
+    
+}
+.subone {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-top: 75px;
+    margin-left: 1px;
+    white-space: initial;
+    color: #615f5f;
+    text-align: center;
+}
+.mission {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -458px;
+}
+h20 {
+    font-weight: 500;
+}
+.pngtwo {
+    margin-top: 51px;
+    margin-left: -10px;
+    width: 68px;
+}
+.second {
+    min-height: 70vh;
+    width: 27%;
+    margin-top: -180px;
+    margin-bottom: 120px;
+    margin-left: 500px;
+    background-color: #f8f9fa;
+    padding-bottom: 8px;
+}
+.subtwo {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-top: 75px;
+    margin-left: 4px;
+    white-space: pre-line;
+    color: #615f5f;
+    text-align: center;
+    margin-bottom: -26px;
+}
+.core {
+    margin-top: -459px;
+    font-size: 20px;
+    text-align: end;
+    margin-right: 238px;
+}
+h21 {
+    font-weight: 500;
+}
+.pngthree {
+    width: 68px;
+    margin-right: 132px;
+    margin-top: 51px;
+}
+.third {
+    min-height: 78vh;
+    width: 31%;
+    margin-top: -180px;
+    margin-bottom: 120px;
+    margin-left: 883px;  
+    background-color: #f8f9fa;
+    
+}
+.subthree {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-top: 75px;
+    margin-left: 4px;
+    white-space: pre-line;
+    color: #615f5f;
+    text-align: center;
+}
+.cover {
+    width: 100%;
+    min-height: 97vh;
+    background-color: #f8f9fa;
+    padding-top: 65px;
+}
+.bislig {
+    margin-top: -38px;
+    margin-left: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.subfour {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 28px;
+    color: #615f5f;
+    line-height: 1.6;
+}
+.footer{
+    background-size: cover;
+    min-height: 10vh;
+    width: 1487px;
+    margin-left: -138px;
+    margin-top: 35vh;
+    background: #1d1d1b; 
+}
+.end{
+    text-align: center;
+    margin-left: 140px;
+    padding-top: 26px;
+    font-size: 14px;
+}
+h12{
+   
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 700px) {
+    
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 600px;
+        top: 0;
+        right: -608px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .secheader .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .secheader .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+       
+    }
+    .vision {
+    font-size: 38px;
+    margin-top: 580px;
+    margin-left: 642px;
+    }
+    h19 {
+        font-weight: 500;
+    }
+    .pngone {
+        margin-top: 80px;
+        margin-left: 590px;
+    }
+    .first {
+        min-height: 140vh;
+        width: 200vh;
+        margin-top: -320px;
+        margin-bottom: 120px;
+        margin-left: -567px;
+        background-color: #f8f9fa;
+        
+    }
+    .subone {
+        font-size: 33px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        margin-top: 250px;
+        margin-left: 1px;
+        white-space: initial;
+        color: #615f5f;
+        text-align: center;
+    }
+    .mission {
+        font-size: 38px;
+        margin-left: 622px;
+        margin-top: 320px;
+    }
+    h20 {
+        font-weight: 500;
+    }
+    .pngtwo {
+        margin-top: 80px;
+        margin-left: -36px;
+        
+    }
+    .second {
+        min-height: 140vh;
+        width: 200vh;
+        margin-top: -300px;
+        margin-bottom: 120px;
+        margin-left: -545px;
+        background-color: #f8f9fa;
+        padding-bottom: 8px;
+    }
+    .subtwo {
+        font-size: 33px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        margin-top: 240px;
+        margin-left: 4px;
+        white-space: pre-line;
+        color: #615f5f;
+        text-align: center;
+        margin-bottom: -26px;
+    }
+    .core {
+        margin-top: 360px;
+        font-size: 38px;
+        text-align: end;
+        margin-right: -435px;
+    }
+    h21 {
+        font-weight: 500;
+    }
+    .pngthree {
+        margin-right: 623px;
+        margin-top: 80px;
+    }
+    .third {
+        min-height: 140vh;
+        width: 200vh;
+        margin-top: -330px;
+        margin-bottom: 120px;
+        margin-left: 76px;  
+        background-color: #f8f9fa;
+        
+    }
+    .subthree {
+        font-size: 33px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.6;
+        margin-top: 250px;
+        margin-left: -45px;
+        white-space: pre-line;
+        color: #615f5f;
+        text-align: center;
+    }
+    .cover {
+        width: 400%;
+        min-height: 240vh;
+        background-color: #f8f9fa;
+        padding-top: 65px;
+    }
+    .bislig {
+        margin-top: 20px;
+        margin-left: 2px;
+        font-size: 38px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .subfour {
+        font-size: 33px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 90px;
+        color: #615f5f;
+        line-height: 1.6;
+    }
+    .footer{
+        background-size: cover;
+        min-height: 20vh;
+        width: 1578px;
+        margin-left: -138px;
+        margin-top: 55vh;
+        background: #1d1d1b; 
+    }
+    .end{
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 42px;
+        font-size: 33px;
+    }
+}
+.admin {
+    margin-top: 145px;
+    
+}
+h18 {
+    margin-left: 160px;
+    font-size: 21px;
+}
+.seven {
+    width: 1020px;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+.tab {
+    background-size: cover;
+    min-height: 220vh;
+    width: 82%;
+    margin-left: 120px;
+    margin-top: -104px;
+    background: #f8f9fa;
+}
+.container {
+    margin-top: 48px;
+    margin-left: 1px;
+    padding: 42px;
+    padding-top: 85px;
+    padding-bottom: 20px;
+    margin-bottom: 58px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 600px;
+        top: 0;
+        right: -608px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .thirdheader .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .thirdheader .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+       
+    }
+    .admin {
+        margin-top: 310px;
+    }
+    h18 {
+        margin-left: 120px;
+        font-size: 38px;
+    }
+    .seven {
+        width: 1020px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+    }
+    .tab {
+        background-size: cover;
+        min-height: 220vh;
+        width: 360%;
+        margin-left: 70px;
+        margin-top: -136px;
+        background: #f8f9fa;
+    }
+    .container {
+        margin-top: 48px;
+        margin-left: 1px;
+        padding: 42px;
+        padding-top: 85px;
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+        font-size: 33px;
+    }
+}
+body {
+    background-color: white;
+}
+.fheader {
+    padding-top: 12px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(34, 52, 168, 0.6), rgba(34, 52, 168, 0.6)), url(coverpage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.program {
+    margin-top: 320px;
+    text-align: center;
+}
+h23 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.subfive {
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.courses {
+    margin-top: 118px;
+    text-align: center;
+}
+h24 {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 560;
+    text-transform: uppercase;
+}
+.offer {
+    margin-top: 110px;
+    margin-left: 120px;
+}
+h25 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+.subsix {
+    margin-top: 16px;
+}
+.coverage {
+    margin-left: 21px;
+    line-height: 1.7;
+}
+.footer{
+    background-size: cover;
+    min-height: 10vh;
+    width: 1487px;
+    margin-left: -138px;
+    margin-top: 60vh;
+    background: #1d1d1b; 
+}
+.end{
+    text-align: center;
+    margin-left: 140px;
+    padding-top: 26px;
+    font-size: 14px;
+}
+h12{
+   
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 700px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 600px;
+        top: 0;
+        right: -608px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .fheader .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .fheader .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+    }
+    .fheader{
+        min-height: 230vh;
+        width: 400%;
+        background-image: linear-gradient(rgba(34, 52, 168, 0.6), rgba(34, 52, 168, 0.6)), url(coverpage.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .program {
+        margin-top: 760px;
+        text-align: center;
+    }
+    h23 {
+        color: white;
+        font-size: 42px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .subfive {
+        color: white;
+        font-size: 28px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .courses {
+        margin-top: 190px;
+        margin-left: 530px;
+        white-space:  nowrap;
+    }
+    h24 {
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 560;
+        text-transform: uppercase;
+    }
+    .offer {
+        margin-top: 110px;
+        margin-left: 120px;
+    }
+    h25 {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        white-space: nowrap;
+    }
+    .subsix {
+        margin-top: 16px;
+        font-size: 29px;
+        white-space: nowrap;
+    }
+    .coverage {
+        margin-left: 29px;
+        line-height: 1.7;
+        white-space: nowrap;
+        font-size: 28px;
+    }
+    .footer{
+        background-size: cover;
+        min-height: 20vh;
+        width: 1578px;
+        margin-left: -138px;
+        margin-top: 100vh;
+        background: #1d1d1b; 
+       
+    }
+    .end{
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+}
+.gal{
+    margin-top: 138px;
+    margin-left: 122px;
+}
+.line {
+    width: 178vh;
+}
+h14{
+    font-size: 26px;
+}
+.gallery{
+
+    margin: 10px 50px;
+ 
+}
+.gallery img{
+    margin-left: 10px;
+    width: 230px;
+    padding: 5px;
+    margin-top: 22px;
+    
+}
+@media only screen and (max-width: 700px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 680px;
+        top: 0;
+        right: -900px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .fiheader .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .fiheader .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+    }
+    .gal{
+        margin-top: 390px;
+        margin-left: 122px;
+    }
+    .line {
+        width: 188vh;
+    }
+    h14{
+        font-size: 40px;
+    }
+    .gallery{
+        margin: 90px 50px;
+    }
+    .gallery img{
+        margin-left: 8px;
+        width: 1100px;
+        padding: 5px;
+        margin-top: 40px;
+    }
+    .footer{
+        background-size: cover;
+        min-height: 20vh;
+        width: 1650px;
+        margin-left: -138px;
+        margin-top: 55vh;
+        background: #1d1d1b; 
+    }
+    .end{
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 42px;
+        font-size: 33px;
+    }
+} 
+</style>
+<body>
+    <section class="fiheader">
+        <nav class="navbar navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="maboglogo.png" class="image1" width="60" height="53"alt="">
+                <h1>Mabog National High School</h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" style="color:rgb(172, 145, 145)" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                    <li><a href="programoffered.html">Program Offered</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <div class="cont">
+        <div class="gal">
+            <h14>Photo Gallery</h14>
+            <hr class="line">
+            <div class="gallery">
+            <a href="galone.jpg" id="myimage" data-lightbox="ourgallery"><img src="galone.jpg" alt=""></a>
+            <a href="galtwo.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwo.jpg" alt=""></a>
+            <a href="galthree.jpg" id="myimage" data-lightbox="ourgallery"><img src="galthree.jpg" alt=""></a>
+            <a href="galfour.jpg" id="myimage" data-lightbox="ourgallery"><img src="galfour.jpg" alt=""></a>
+            <a href="galfive.jpg" id="myimage" data-lightbox="ourgallery"><img src="galfive.jpg" alt=""></a>
+            <a href="galsix.jpg" id="myimage" data-lightbox="ourgallery"><img src="galsix.jpg" alt=""></a>
+            <a href="galseven.jpg" id="myimage" data-lightbox="ourgallery"><img src="galseven.jpg" alt=""></a>
+            <a href="galeight.jpg" id="myimage" data-lightbox="ourgallery"><img src="galeight.jpg" alt=""></a>
+            <a href="galnine.jpg" id="myimage" data-lightbox="ourgallery"><img src="galnine.jpg" alt=""></a>
+            <a href="galten.jpg" id="myimage" data-lightbox="ourgallery"><img src="galten.jpg" alt=""></a>
+            <a href="galeleven.jpg" id="myimage" data-lightbox="ourgallery"><img src="galeleven.jpg" alt=""></a>
+            <a href="galtwelve.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwelve.jpg" alt=""></a>
+            <a href="galthirteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galthirteen.jpg" alt=""></a>
+            <a href="galfourteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galfourteen.jpg" alt=""></a>
+            <a href="galfifteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galfifteen.jpg" alt=""></a>
+            <a href="galsixteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galsixteen.jpg" alt=""></a>
+            <a href="galseventeen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galseventeen.jpg" alt=""></a>
+            <a href="galeighteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galeighteen.jpg" alt=""></a>
+            <a href="galnineteen.jpg" id="myimage" data-lightbox="ourgallery"><img src="galnineteen.jpg" alt=""></a>
+            <a href="galtwenty.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwenty.jpg" alt=""></a>
+            <a href="galtwentyone.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwentyone.jpg" alt=""></a>
+            <a href="galtwentytwo.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwentytwo.jpg" alt=""></a>
+            <a href="galtwentythree.jpg" id="myimage" data-lightbox="ourgallery"><img src="galthree.jpg" alt=""></a>
+            <a href="galtwentyfour.jpg" id="myimage" data-lightbox="ourgallery"><img src="galtwentyfour.jpg" alt=""></a>
+        </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="end">
+            <h12><i class="fa fa-copyright"></i>  2022 Mabog National High School</h12>
+        </div>
+    </section>
+
+    <!--Button-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-680px";
+        }
+    </script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
