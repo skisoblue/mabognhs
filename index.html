@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Tiro+Devanagari+Marathi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <title>Mabog National High School</title>
+    <link rel="icon" href="maboglogo.png" type="image/x-icon">
+
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f8f9fa;
+    
+}
+.header{
+    padding-top: 12px;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,
+    rgba(34, 52, 168, 1) 1%,
+    rgba(34, 52, 168, .8) 18%,
+    rgba(34, 52, 168, .10) 90%),
+    url(front.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    z-index: 3;
+}
+.navbar-brand{
+    margin-top: -4px;
+    margin-left: 100px;
+}
+h1{
+    font-size: 18px;
+    margin-left: 65px;
+    position: absolute;
+    top: 30px;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px;
+    position: relative;
+    margin-top: 15px;
+    padding-right: 38px;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.nav-links ul li a:hover{
+    color:#2234A8;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2234A8;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    height: 2px;
+}
+.text-box{
+    width:90%
+}
+.text-box h2{
+    color: white;
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: 280px; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+.text-box h3{
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: -6px;
+    color: #fafa33;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box h4{
+    color: white;
+    font-size: 45px;
+    margin-left: 368px;
+    margin-top: -62px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.text-box h5{
+    color: white;
+    font-size: 45px;
+    margin-left: 120px;
+    margin-top: -9px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.par1{
+    margin-left: 121px;
+    margin-top: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: white;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 210px;
+        z-index: 3;
+    }
+    .text-box h2 {
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #2234a8;
+        height: 640vh;
+        width: 680px;
+        top: 0;
+        right: -900px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 28px;
+        cursor: pointer;
+        font-size: 55px;
+    }
+    .nav-links ul {
+        margin-top: 8px;
+        padding: 90px;
+    }
+    .header{
+        min-height: 230vh;
+        width: 400%;
+        background-image: linear-gradient(to right,
+        rgba(34, 52, 168, 1) 1%,
+        rgba(34, 52, 168, .8) 18%,
+        rgba(34, 52, 168, .10) 90%),
+        url(front.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .header .navbar-brand{
+        margin-top: 12px;
+        margin-left: -6px;
+    }
+    .header .navbar-brand .image1{
+        margin-left: 45px;
+        width: 135px;
+        height: 118px;
+    }
+    h1{
+        padding-left: 60px;
+        font-size: 38px;
+        margin-left: 132px;
+        position: absolute;
+        top: 97px;
+        font-family: 'Tiro Devanagari Marathi', serif;
+    }
+    .text-box h2 {
+        margin-top: 800px;
+        margin-bottom: -9px;
+        margin-left: 35px;
+        font-size: 60px;
+    }
+    .text-box h3{
+        margin-top: 16px;
+        margin-left: 35px;
+        font-size: 60px;
+    }
+    .text-box h4{
+        margin-left: 368px;
+        font-size: 60px;
+        margin-top: -80px;
+    }
+    .text-box h5{
+        margin-left: 35px;
+        font-size: 60px;
+        margin-top: -2px;
+    }
+    .text-box .par1{
+        
+        margin-left: 35px;
+        margin-top: 10px;
+        font-size: 35px;
+        font-weight: 450;
+        font-family: 'Poppins', sans-serif;
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 53px;
+        white-space: nowrap;
+       
+    }
+}
+.news{
+    margin-top: 120px;
+    margin-left: 120px;
+}
+h6{
+    font-size: 33px;
+    margin-left: 574px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+.category{
+    background-size: cover;
+    min-height: 90vh;
+    width: 110%;
+    margin-left: -124px;
+    margin-top: -210px;
+    background: white;   
+    text-align: left;
+    padding-bottom: 120px;
+}
+.una{
+    padding-top: 90px;
+    padding-left: 90px;
+}
+.intro {
+    margin-top: 142px;
+    margin-left: 30px;
+}
+.mabog {
+    margin-left: 610px;
+    margin-top: -262px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.footer{
+    background-size: cover;
+    min-height: 10vh;
+    width: 1487px;
+    margin-left: -138px;
+    margin-top: 60vh;
+    background: #1d1d1b; 
+}
+.end{
+    text-align: center;
+    margin-left: 140px;
+    padding-top: 26px;
+    font-size: 14px;
+}
+h12{
+   
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width: 700px) {
+    .news{
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    h6{
+        font-size: 55px;
+        margin-left: 7px;
+        margin-top: 210px;
+        white-space: nowrap;
+        
+    }
+    .category{
+        background-size: cover;
+        min-height: 268vh;
+        width: 445%;
+        margin-left: 4px;
+        margin-top: 45px;
+        background: white;   
+        margin-bottom: 100px;
+    }
+    .una{
+        padding-top: 48px;
+        padding-left: 14px;
+    }
+    .intro {
+        margin-top: 760px;
+        margin-left: -6px;
+        width: 1280px;
+        height: 840px;
+    }
+    .mabog {
+        margin-left: -10px;
+        margin-top: -1580px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 31px;
+        line-height: 1.6;
+        
+    }
+    .footer{
+        background-size: cover;
+        min-height: 20vh;
+        width: 1680px;
+        margin-left: -138px;
+        margin-top: 390vh;
+        background: #1d1d1b; 
+    }
+    .end{
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 42px;
+        font-size: 25px;
+    }
+}
+.head {
+    margin-top: -708px;
+    margin-left: 120px;
+}
+h7 {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+
+}
+.artone {
+    min-height: 29vh;
+    width: 58%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.newone {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+h8 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+    white-space: pre-line;
+}
+.image2 {
+    height: 32vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -66px;
+}
+.bodyone {
+    white-space: pre-line;
+    margin-top: -110px;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+h9 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+}
+.artwo {
+    min-height: 32vh;
+    width: 58%;
+    margin-top: -18px;
+    margin-bottom: 86px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.newtwo {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+.image3 {
+    height: 32vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -42px;
+}
+.bodytwo {
+    white-space: pre-line;
+    margin-top: -132px;
+    font-size: 14px;
+    margin-bottom: 26px;
+}
+.arthree {
+    min-height: 32vh;
+    width: 58%;
+    margin-top: -68px;
+    margin-bottom: 280px;
+    margin-left: 4px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+    
+}
+.newthree {
+    margin-top: 18px;
+    margin-left: 12px;
+}
+h10 {
+    font-size: 16px;
+    color: #2234a8;
+    font-weight: 500;
+    white-space: pre-line;
+}
+.image4 {
+    height: 35vh;
+    width: 35%;
+    margin-left: 454px;
+    margin-top: -66px;
+}
+.bodythree {
+    white-space: pre-line;
+    margin-top: -126px;
+    font-size: 14px;
+    margin-bottom: 21px;
+}
+.announce {
+    margin-left: 880px;
+    margin-top: 102px;
+}
+h11 {
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.inform {
+    min-height: 85vh;
+    width: 75%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: -5px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #b4b7ba;
+}
+.event {
+    color: #2234A8;
+    font-size: 14px;
+    margin-left: 35px;
+    margin-top: 8px;
+    white-space: pre-line;
+    line-height: 115%;
+}
+
+@media only screen and (max-width: 700px) {
+    .head {
+        margin-top: -3200px;
+        margin-left: 45px;
+    }
+    h7 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .artone {
+        min-height: 60vh;
+        width: 412%;
+        margin-top: 35px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 36px;
+    }
+    .newone {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h8 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image2 {
+        height: 65vh;
+        width: 47%;
+        margin-left: 769px;
+        margin-top: -140px;
+    }
+    .bodyone {
+        white-space: pre-line;
+        margin-top: -222px;
+        font-size: 25px;
+        margin-bottom: 34px;
+    }
+    .artwo {
+        min-height: 60vh;
+        width: 412%;
+        margin-top: -112px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 50px;
+    }
+    .newtwo {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h9 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image3 {
+        height: 65vh;
+        width: 47%;
+        margin-left: 769px;
+        margin-top: -96px;
+    }
+    .bodytwo {
+        white-space: pre-line;
+        margin-top: -278px;
+        font-size: 25px;
+        margin-bottom: 38px;
+    }
+    .arthree {
+        min-height: 60vh;
+        width: 412%;
+        margin-top: -112px;
+        margin-bottom: 190px;
+        margin-left: 4px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        padding-bottom: 50px;
+    }
+    .newthree {
+        margin-top: 50px;
+        margin-left: 12px;
+    }
+    h10 {
+        font-size: 30px;
+        color: #2234a8;
+        font-weight: 500;
+        white-space: pre-line;
+    }
+    .image4 {
+        height: 68vh;
+        width: 47%;
+        margin-left: 769px;
+        margin-top: -140px;
+    }
+    .bodythree {
+        white-space: pre-line;
+        margin-top: -268px;
+        font-size: 25px;
+        margin-bottom: 28px;
+    }
+    .announce {
+        margin-left: 50px;
+        margin-top: 2200px;
+    }
+    h11 {
+        font-size: 50px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+    }
+    .inform {
+        min-height: 145vh;
+        width: 435%;
+        margin-top: 35px;
+        margin-bottom: 120px;
+        margin-left: -8px;
+        border-style: solid;
+        border-radius: 2px;
+        border-width: 1px;
+        border-color: #b4b7ba;
+        
+    }
+    .event {
+        color: #2234A8;
+        font-size: 33px;
+        margin-left: 100px;
+        margin-top: 20px;
+        line-height: 200%;
+        white-space: normal;
+    }
+}
+
+</style>
+<body>
+
+    <section class="header">
+        <nav class="navbar navbar-light bg-white">
+            <a class="navbar-brand" href="index.html">
+                <img src="maboglogo.png" class="image1" width="60" height="53"alt="">
+                <h1>Mabog National High School</h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" style="color:rgb(172, 145, 145)" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="administration.html">Administration</a></li>
+                    <li><a href="programoffered.html">Program Offered</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h2>Built to serve and provide</h2>
+            <h3>education</h3>
+            <h4>to</h4>
+            <h5>the community</h5>
+            <div class="par1">
+                <p style="white-space: pre-line; color: white; font-weight: 300;">The home of organic agriculture. Enriching and empowering 
+                                                             the learners in studies and curricular activities.</p>
+            </div>
+        </div>
+    </section>
+    <!--NEWS-->
+    <section class="news">
+        <h6>Welcome to Mabog 
+            National High School</h6>
+            <div class="category">
+                <div class="una">
+                    <iframe class="intro" src="https://drive.google.com/file/d/1cMwcFIRI_8T5XH0GfmTRlcQAv48zw7Tn/preview" width="480" height="280" allow="autoplay" allowfullscreen="allowfullscreen"></iframe>                        
+                    <p class="mabog" style="white-space: pre-line">Mabog National High School prides itself on the quality of its educational 
+                                                        programmes, the Professionalism of each Teachers and staff, the enthusiam 
+                                                        of its Student and the high level of support provided by the parents. This 
+                                                        is a public school and actively seek participation and involvement from the 
+                                                        whole school community.
+
+                                                        Mabog National High School  was founded in the year of 2003. The School has 
+                                                        become one of the most transformed and has gained recognition in both extra 
+                                                        and co-curricular activities.
+                            
+                                                        Over the years, the school has continued to provide education and assessing 
+                                                        the learner’s to improve students performance. </p>
+                                                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Announce-->
+        <section class="announce">
+            <h11>Announcement</h11>
+            <div class="inform">
+                <ul class="event">
+                    <li>Enrollment Period | July 25 - August 22, 2022</li>
+                    <li>Brigada Eskwela | August 1-26, 2022</li>
+                    <li>Oplan Balik Skwela Command Conference |
+                        August 15, 2022</li>
+                    <li>Start of School Year | August 22, 2022</li>
+                    <li>First Academic Quarter | August 22-
+                        November 5, 2022</li>
+                    <li>Second Academic Quarter | November 7, 2022-
+                        February 3, 2023</li>
+                    <li>Start of Christmas Break | December 19, 2022</li>
+                    <li>Resumption of Class | January 4, 2023</li>
+                    <li>Midyear Break | February 6-10, 2023</li>
+                    <li>Third Academic Quarter | February 13-
+                        April 28, 2023</li>
+                    <li>Fourth Academic Quarter | May 2 - July 7, 2023</li>
+                    <li>End of School Year | July 7, 2023</li>
+                    <li>End-of-School Year Rites | July 10-14, 2023</li>
+                    <li>Remedial Classes | July 17 - August 26, 2023</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!--news-->
+        <section class="head">
+            <h7>News</h7>
+            <div class="artone">
+                <div class="newone">
+                    <h8>Pagtatapos 2022: 7th Commencement Rites and 19th 
+                        Moving Up Ceremony</h8>
+                    <img src="graduation.jpg" class="image2" alt="">
+                    <p class="bodyone">Mabog National High School celebrates the wonderful milestone 
+                                       and achievements of students and parents last. Amid the pandemic 
+                                       the school was able to held a face-to-face graduation with the
+                                       accordance of the IATF Guidelines. </p>
+                </div>
+            </div>
+            <div class="artwo">
+                <div class="newtwo">
+                    <h9>Princess Mae Bracho Receives Leadership Award</h9>
+                    <img src="princess.jpg" class="image3" alt="">
+                    <p class="bodytwo">SSG Student-Leader Princess Mae Bracho receives Leadership
+                                       Award during the 7th Commencement Rites at Mabog National 
+                                       High School Gym. Bracho has been a good leader and a good 
+                                       follower, a very responsible, focused, dedicated, goal-oriented,
+                                       passionate, and a visionary leader.</p>
+                </div>
+            </div>
+            <div class="arthree">
+                <div class="newthree">
+                    <h10>MNHS bags Best Implementing School Medium 
+                        Category-Secondary Level</h10>
+                    <img src="cert.jpg" class="image4" alt="">
+                    <p class="bodythree">The award was received by the school head Leven Mart Lacuna, it
+                                         serves as a recognition for its exemplary contribution to improve the
+                                         quality of basic education by highlighting partnership engagements
+                                         and initiatives to support the Basic Education Learning Continuity
+                                         Plan through the 2021 Brigada Eskwela Program.</p>
+                </div>
+            </div>
+        </section>
+    <!--Footer-->
+    <section class="footer">
+        <div class="end">
+            <h12><i class="fa fa-copyright"></i>  2022 Mabog National High School</h12>
+        </div>
+    </section>
+    <!--Button-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-680px";
+        }
+    </script>
+    
+</body>
+</html>
